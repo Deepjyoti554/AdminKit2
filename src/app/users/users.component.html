@@ -1,0 +1,23 @@
+<div class="users" style="padding: 10vw;">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Password</th>
+            <th scope="col">View</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of displayData">
+            <th scope="row">{{user.id}}</th>
+            <td>{{user.name}}</td>
+            <td>{{user.email}}</td>
+            <td><h4>.....</h4></td>
+            <td><a class="btn btn-primay" routerLink="/users/details">Show</a></td>
+          </tr>
+          <tr>
+        </tbody>
+      </table>
+</div>
